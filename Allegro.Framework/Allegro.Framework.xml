@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Allegro.Framework</name>
+    </assembly>
+    <members>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Compliance on the requirement of allegro using authorization, logging and Swagger.
+            </summary>
+            <param name="configuration">parameter provided in the startup</param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            runtime method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Need to add services on startup
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            runtime method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.AddConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            need to add configuration on startup
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.SwaggerRegistration">
+            <summary>
+            Use to configure swagger.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.DependencyContainer(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Contains all the DI of the solution
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.GetAssemblies">
+            <summary>
+            Use to register assemblies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Allegro.Framework.Api.WebApiRegistration.EnableAuthoriztion">
+            <summary>
+            Enable/Disable the authorization of the apis.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
